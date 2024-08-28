@@ -56,6 +56,32 @@
             margin-top: -15px;
             margin-bottom: 20px;
         }
+        .drop-zone {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 40%;
+    max-height: 40%;
+    position: absolute;
+    top: 650px;
+    left: 150px;
+}
+
+        .drop-zone.dragover {
+            border-color: #000;
+            color: #000;
+        }
+        
     </style>
 </head>
 <body>
@@ -94,13 +120,63 @@
     <br>
     <textarea placeholder="write ur thought......"  class="id" name="what_are_your_expectations" id="" autofocus required></textarea>
     <br> <br>
+    <!-- <label for="">PROOF OF PAYMENT</label>
+    <input name="proof_of_payment" type="file"> -->
     <label for="">PROOF OF PAYMENT</label>
-    <input name="proof_of_payment" type="file">
+    <div class="drop-zone" id="drop-zone">
+        Drop image here
+    </div>
+    <input  name="proof_of_payment"  type="file" id="file-input" style="display: none;" />
+    <img id="image-preview" />
     <br><br>
     <button >SEND</button>
 </article>
 <br>
 <marquee direction="right" behavior="alternate">FIDELITY "ACCT. NO."</marquee>
 </form>
+<script>
+    const dropZone = document.getElementById('drop-zone');
+    const fileInput = document.getElementById('file-input');
+    const imagePreview = document.getElementById('image-preview');
+
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('dragover');
+    });
+
+    dropZone.addEventListener('dragleave', () => {
+        dropZone.classList.remove('dragover');
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('dragover');
+        const file = e.dataTransfer.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                imagePreview.src = reader.result;
+                imagePreview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    dropZone.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                imagePreview.src = reader.result;
+                imagePreview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
 </body>
 </html>
