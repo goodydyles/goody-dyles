@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>CONTACT US</title>
     <style>
         h1{
             text-align: center;
-            col
+            font-family:Nerko One;
+            font-weight: lighter;
+            letter-spacing: 5px;
+            word-spacing: 10px;
         }
         article {
             max-width: 400px;
@@ -49,44 +53,54 @@
         .im{
             text-align: center; 
             font-style: italic;
-
+            margin-top: -15px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-<h1>CONTACT <br> GOODY DYLES😎🤑</h1>
- <p class="im">I teach web programming online with a fee of 10,000 naira</p>
+<h1>CONTACT  GOODY'S DEV SQUAD  </h1>
+ <p class="im">I teach web programming(mostly for html and css tips,tags etc ) online with a fee of 5,000 naira</p>
 <form action="https://formsubmit.co/goodydyles11@gmail.com" method="POST">
     <article>
        <p>FILL IN INFO</p> 
-    <label for="">NAME</label>
+    <label for=""> FULL NAME</label>
     <br>
-    <input class="id" name="NAME" type="text" placeholder="name" autofocus required>
+    <input class="id" name="FULL_NAME" type="text" placeholder="name" autofocus required>
     <br><br>
-    <label for="">PHONE NUMBER</label>
+    <label for="">WHATSAPP NUMBER</label>
     <br>
-    <input class="id" name="PHONE_NUMBER" type="tel" placeholder="Phone number" autofocus required>
+    <input class="id" name="WHATSAPP_NUMBER" type="tel" placeholder=" number" autofocus required>
     <br><br>
     <label for="">E-MAIL ADDRESS</label>
     <br>
-    <input class="id" name="e-mail address" type="email" placeholder="email">
+    <input class="id" name="e-mail_address" type="email" placeholder="email">
     <br><br>
-    <label for="">PASSWORD</label>
+    <!-- <label for="">PASSWORD</label>
     <br>
     <input class="id" name="password" type="password" placeholder="password">
-    <br><br>
+    <br><br> -->
     <label for="">AGE</label>
     <br>
-    <input class="id" type="number" placeholder="age">
+    <input name="age" class="id" type="number" placeholder="age">
     <br><br>
-    <label for="">FEEDBACK</label>
+    <label for="">GENDER</label>
     <br>
-    <textarea placeholder="write ur thought......"  class="id" name="FEEDBACK" id="" autofocus required></textarea>
+    <input name="gender" type="radio">Male
+    <br>
+    <input type="radio" name="gender"> Female
+    <br><br>
+    <label for="">WHAT ARE UR EXPECTATION </label>
+    <br>
+    <textarea placeholder="write ur thought......"  class="id" name="what_are_your_expectations" id="" autofocus required></textarea>
     <br> <br>
+    <label for="">PROOF OF PAYMENT</label>
+    <input name="proof_of_payment" type="file">
+    <br><br>
     <button >SEND</button>
 </article>
 <br>
-<marquee direction="right" behavior="alternate">send proof of payment</marquee>
+<marquee direction="right" behavior="alternate">FIDELITY "ACCT. NO."</marquee>
 </form>
 </body>
 </html>
