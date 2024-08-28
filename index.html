@@ -3,101 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>CONTACT US</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        h1{
+            text-align: center;
+            font-family:Nerko One;
+            font-weight: lighter;
+            letter-spacing: 5px;
+            word-spacing: 10px;
         }
-        .box1{
-            /* width: 100px; */
+        article {
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 50px  rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            transition:1.0s ease-in-out;
+            border-radius: 10px;
+        }
+        button:hover{
             background-color: aqua;
-            display: grid;
-            grid-auto-flow: row;
-            padding: 10px;
-            row-gap: 10px;
+            transform: translatey(-7px);
         }
-        .box2{
-            /* width: 100px; */
-            background-color: red;
+        .id{
+            background-color: antiquewhite;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
         }
-        .box3{
-            /* width: 100px; */
-            background-color: rgb(35, 79, 157);
+        body{
+            background-color: blanchedalmond;
         }
-        .box4{
-            /* width: 100px; */
-            background-color:olive;
+        p{
+            text-align: center;
+            font-weight: bold;
         }
-        .box5{
-            /* width: 100px; */
-            background-color: yellow;
+        u{
+            text-decoration: none;
+            text-align: center;
+            
         }
-        .box6 {
-            background: #000;
+        .im{
+            text-align: center; 
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 20px;
         }
-        
-        div {
-            display: inline;
-            /* height: 200px; */
-        }
-        
-        .container {
-            padding: 20px;
-            display: grid;
-            /* grid-auto-flow: column; */
-            /* grid-template-columns: 100px 100px 100px; */
-            grid-template-columns: 1fr 1fr 1fr;
-            /* column-gap: 10px; */
-            /* row-gap: 10px; */
-            gap: 10px 20px;
-            /* justify-content: space-evenly; */
-            /* align-items: center; */
-            /* align-content: end; */
-        }
-        
-                .box1 .details {
-                    display: grid;
-                    grid-auto-flow: column;
-                    align-items: center;
-                    /* justify-content: ; */
-                    /* background: gold; */
-                }
-
-                p {
-                    text-align: justify;
-                }
     </style>
 </head>
 <body>
-    <article class="container">
-
-        <div class="box1">
-            <div class="details">
-                <div class="image">
-                    <img style="width: 50px; height: 50px; border-radius: 50%;" src="images/1623962205.png.jpg">
-                </div>
-
-                <div class="name">
-                    <h3>Goodluck</h3>
-                    <p>Founder/CEO</p>
-                </div>
-            </div>
-            
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos, reprehenderit, earum nam laudantium eaque totam esse veniam et nostrum labore vitae. Sed esse tempore excepturi odit expedita sit cumque!</p>
-            </div>
-        </div>
-
-
-
-
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-    </article>
+<h1>CONTACT  GOODY'S DEV SQUAD  </h1>
+ <p class="im">I teach web programming(mostly for html and css tips,tags etc ) online with a fee of 5,000 naira</p>
+<form action="https://formsubmit.co/goodydyles11@gmail.com" method="POST">
+    <article>
+       <p>FILL IN INFO</p> 
+    <label for=""> FULL NAME</label>
+    <br>
+    <input class="id" name="FULL_NAME" type="text" placeholder="name" autofocus required>
+    <br><br>
+    <label for="">WHATSAPP NUMBER</label>
+    <br>
+    <input class="id" name="WHATSAPP_NUMBER" type="tel" placeholder=" number" autofocus required>
+    <br><br>
+    <label for="">E-MAIL ADDRESS</label>
+    <br>
+    <input class="id" name="e-mail_address" type="email" placeholder="email">
+    <br><br>
+    <!-- <label for="">PASSWORD</label>
+    <br>
+    <input class="id" name="password" type="password" placeholder="password">
+    <br><br> -->
+    <label for="">AGE</label>
+    <br>
+    <input name="age" class="id" type="number" placeholder="age">
+    <br><br>
+    <label for="">GENDER</label>
+    <br>
+    <input name="gender" type="radio">Male
+    <br>
+    <input type="radio" name="gender"> Female
+    <br><br>
+    <label for="">WHAT ARE UR EXPECTATION </label>
+    <br>
+    <textarea placeholder="write ur thought......"  class="id" name="what_are_your_expectations" id="" autofocus required></textarea>
+    <br> <br>
+    <label for="">PROOF OF PAYMENT</label>
+    <input name="proof_of_payment" type="file">
+    <br><br>
+    <button >SEND</button>
+</article>
+<br>
+<marquee direction="right" behavior="alternate">FIDELITY "ACCT. NO."</marquee>
+</form>
 </body>
 </html>
