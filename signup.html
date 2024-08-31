@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        .body{
+            max-width: 400px;
+            /* height: 40px; */
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px;
+            margin: auto;
+            position: relative;
+            top: 90px;
+            padding: 30px;
+            /* text-align: center; */
+        }
+        .id{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input{
+            width: 100%;
+            border-radius: 10px;
+            height: 30px;
+        }
+        input:hover{
+            cursor:pointer ;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            border-radius: 20px;
+            transition: 1.0s ease-in-out;
+            /* transform: translateY(-10px); */
+        }
+        button:hover{
+            background-color: rgb(174, 243, 243);
+            transform: translateY(-10px);
+        }
+        .privacy{
+            text-align: center;
+            font-size: 15px;
+        }
+        .login{
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            top: 90px;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <section class="body">
+    <form action="https://formsubmit.co/goodydyles11@gmail.com" method="POST">
+        <p class="id">Sign up</p>
+        <label for="">FIRST NAME</label>
+        <br>
+        <input name="FIRST_NAME" type="text" placeholder="name...." required >
+        <br><br>
+        <label for="">LAST NAME</label>
+        <br>
+        <input name="LAST_NAME" type="text" placeholder="name....." required>
+        <br><br>
+        <label for="">AGE</label>
+        <br>
+        <input name="AGE" type="number" placeholder="age.." required>
+        <br><br>
+        <label for="">E-MAIL ADDRESS</label>
+        <br>
+        <input name="E-MAIL ADDRESS" type="email" placeholder="email...." required>
+        <br><br>
+        <label for="">PASSWORD</label>
+        <br>
+        <input name="PASSWORD" type="password" placeholder="password....." required>
+        <br><br>
+        <label for="">CONFIRM PASSWORD</label>
+        <br>
+        <input name="CONFIRM_PASSWORD" type="password" placeholder="confirm password....." required>
+        <br><br><br>
+        <button>SIGN UP</button>
+        <p class="privacy"> By clicking the signup button you agree to all our <a target="_blank" href="terms and condition.html">terms and condition</a></p>
+    </form>
+</section>
+    <p class="login">Already have an account? <a href="login.html">Login here</a></p>
+</body>
+</html>

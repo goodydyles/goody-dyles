@@ -3,102 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD'S ONLINE AID</title>
+    <link rel="icon" href="images/WhatsApp Image 2024-08-31 at 10.15.00_c052c789.jpg" >
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-    <title>CONTACT US</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
     <style>
-        h1{
-            text-align: center;
-            font-family:Nerko One;
-            font-weight: lighter;
-            letter-spacing: 5px;
-            word-spacing: 10px;
-        }
-        article {
-            max-width: 400px;
-            margin: auto;
-            padding: 30px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 50px  rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        button{
+        .body{
+            /* background-color: azure; */
             width: 100%;
-            height: 30px;
-            transition:1.0s ease-in-out;
-            border-radius: 10px;
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            box-shadow: 0px 5px 10px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            z-index: 1;
         }
-        button:hover{
-            background-color: aqua;
-            transform: translatey(-7px);
+        .class{
+            font-size: 40px;
+            font-weight: bolder;
+            font-family:Matemasie ;
+            color: goldenrod;
+            text-shadow: 0px 0px 20px;
         }
-        .id{
-            background-color: antiquewhite;
-            width: 100%;
-            height: 30px;
-            border-radius: 10px;
-        }
-        body{
-            background-color: blanchedalmond;
-        }
-        p{
-            text-align: center;
-            font-weight: bold;
-        }
-        u{
+        .win{
+            position: relative;
+            left: 590px;
+            top: 5px;
             text-decoration: none;
+            color: white;
+            background-color: rgb(158, 137, 17);
+            border-radius: 20px;
+            width:100px;
+            height: 45px;
             text-align: center;
-            
         }
-        .im{
-            text-align: center; 
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 20px;
+        .wine{
+            position: relative;
+            left: 600px;
+            top: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(158, 137, 17);
+            border-radius: 20px;
+            width:100px;
+            height: 45px;
+            text-align: center;
+        }
+        .fine{
+            /* background-color: blue; */
+            height: 600px;
+            width: 800px;
+            color: white;
+        }
+        .fin{
+            text-align: left;
+            position: relative;
+            top:300px;
+            left: 100px;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+        .site{
+            font-size: 20px;
+        }
+        .signup{
+            width: 250px;
+            background-color: orange;
+            padding: 10px;
+            position: absolute;
+            top: 170px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .mpo{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .sos{
+            width: 250px;
+            height: 30px;
+            background-color: rgb(49, 49, 167);
+            border: solid black;
+            color: white;
+            position: absolute;
+            top: 470px;
+            left: 400px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .bmw{
+            font-weight: lighter;
+            font-size: 25px;
+        }
+        .img{ 
+            display: inline;
+            position: absolute;
+            top:90px;
+            left: 750px;
+        }
+        .src{
+            width: 550px;
+            height: 550px;
+            border-radius: 20px;
+        }
+        .what{
+            position: absolute;
+            top: 650px;
+            left: 500px;
+            font-size: 50px;
+            color: white;
+            font-family: Baskervville SC;
+            text-shadow:4px 5px 20px ;
+        }
+        .we{
+            margin-top: 200px;
+            display: flex;
+            gap: 20px;
+        }
+        .box1,.box2,.box3{
+            border-radius: 20px;
+            width: 600px;
+            height: 300px;
+            background: 
+            linear-gradient(to right bottom,
+            rgb(82, 218, 82) 0% 80%,
+            orange 80% 100%
+            );
+            box-shadow: 0px 0px 10px white;
+            padding: 40px;
+        }
+        .box1{
+            margin-left: 20px;
+        }
+        .box3{
+            margin-right: 20px;
+        }
+        .dot{
+            text-align: center;
+            font-size: 30px;
+        }
+        .bot{
+            font-size: 17px;
+            text-align: justify;
+            text-indent: 50px;
+        }
+        .profile{
+            position: absolute;
+            top: 1300px;
+            left:530px;
+            font-size:40px;
+            color: white;
+            text-shadow: 4px 5px 20px;
+        } 
+        .gradient{
+            position: relative;
+            top: 360px;
+            left: 120px;
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(
+                red 0 40%,
+                yellow 40% 50%,
+                chartreuse 50% 70%,
+                rgb(136, 105, 47) 70% 100%
+            );
+            border-radius: 100px;
+            box-shadow: 0px 0px 50px;
+        }
+        .grad{
+            background-color: rgb(78, 78, 247);
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            position: relative;
+            left: calc(50% - 75px);
+            top: calc(50% - 75px);
+            box-shadow: 0px 0px 50px;
+        }
+        .grad:hover{
+            background-color: rgb(218, 198, 88);
+        }
+        .pro{
+            width: 400px;
+            height: 500px;
+            background-color: bisque;
+            border-radius: 20px;
+            position: absolute;
+            top: 1400px;
+            left: 470px;
+            box-shadow: 0px 0px 50px blue;
+        }
+        .gradient1{
+            
+            position: relative;
+            top:160px;
+            left: 1000px;
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(
+                red 0 40%,
+                yellow 40% 50%,
+                chartreuse 50% 70%,
+                rgb(136, 105, 47) 70% 100%
+            );
+            border-radius: 100px;
+            box-shadow: 0px 0px 50px;
+        }
+        .grad1{
+            background-color: rgb(78, 78, 247);
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            position: relative;
+            left: calc(50% - 75px);
+            top: calc(50% - 75px);
+            box-shadow: 0px 0px 50px;
+        }
+        .grad1:hover{
+            background-color: rgb(218, 198, 88);
+        }
+        body,html{
+            background-image: url(images/blue-dgmxybg4kb7eab7x.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: fixed;
+            padding: 0;
+            margin: 0;
+        }
+        .myself{
+            height: 350px;
+            width: 400px;
+            border-radius: 20px 20px 0px 0px ;
+        }
+        .media{
+            width: 240px;
+            height: 60px;
+            background-color: bisque;
+            position: absolute;
+            top: 310px;
+            left: 80px;
+        }
+        .socks{
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .nav{
+            position: relative;
+            top: 30px;
+            left: 70px;
+        }
+        .web{
+            position: relative;
+            top: 30px;
+            left: 30px;
+            opacity: 0.8;
+            font-size: 20px;
+        }
+        .margin{
+            background: rgba(255, 255, 255, 0.616);
+            /* width: 100%; */
+            height: 250px;
+            position: relative;
+            margin: 0;
+            top: 400px;
+            padding: 50px;
+            border-radius: 20px 20px 0px 0px;
+            font-size: 30px;
+            text-indent: 50px;
+            text-align: justify;
+        }
+        .con{
+            font-weight: bolder;
+        }
+        .review{
+            display: inline;
+            font-weight: bolder;
+            color: red;
+        }
+        .note{
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<h1>CONTACT  GOODY'S DEV SQUAD  </h1>
- <p class="im">I teach web programming(mostly for html and css tips,tags etc ) online with a fee of 5,000 naira <br>
-To: fidelity"ACCT. NO....."</p>
-<form action="https://formsubmit.co/goodydyles11@gmail.com" method="POST">
-    <article>
-       <p>FILL IN INFO</p> 
-    <label for=""> FULL NAME</label>
+    <section class="body">
+        <p class="class">GOODY' ONLINE AID</p>
+        <a class="win" href="#link"><p class="shorcut">ABOUT</p></a>
+        <a class="wine" href="#us"><p class="shorcut">ADMIN</p></a>
+    </section>
+    <section class="fine">
+    <b class="fin">The #1  aid for web developer 
+    <p class="site">Join thousands of large minds with aboundance of capability as the set <br> their futuristic passion
     <br>
-    <input class="id" name="FULL_NAME" type="text" placeholder="name" autofocus required>
-    <br><br>
-    <label for="">WHATSAPP NUMBER</label>
-    <br>
-    <input class="id" name="WHATSAPP_NUMBER" type="tel" placeholder=" number" autofocus required>
-    <br><br>
-    <label for="">E-MAIL ADDRESS</label>
-    <br>
-    <input class="id" name="e-mail_address" type="email" placeholder="email">
-    <br><br>
-    <!-- <label for="">PASSWORD</label>
-    <br>
-    <input class="id" name="password" type="password" placeholder="password">
-    <br><br> -->
-    <label for="">AGE</label>
-    <br>
-    <input name="age" class="id" type="number" placeholder="age">
-    <br><br>
-    <label for="">GENDER</label>
-    <br>
-    <input name="gender" type="radio" value="Male">Male
-    <br>
-    <input type="radio" name="gender" value="Female"> Female
-    <br><br>
-    <label for="">WHAT ARE UR EXPECTATION </label>
-    <br>
-    <textarea placeholder="write ur thought......"  class="id" name="what_are_your_expectations" id="" autofocus required></textarea>
-    <br><br>
-    <button >SEND</button>
+    <a class="signup" href="signup.html"><p class="mpo">Sign up for free</p></a> 
+    </p>
+    
+    </b>
+    <a class="sos" href="login.html"><b class="bmw">login</b></a>
+</section>
+<div class="img">
+    <img class="src" src="images/portrait-young-african-woman-with-laptop-white.png" alt="">
+</div>
+<!-- <br><br> -->
+ <p id="link" class="what"> WHAT  WE DO</p>
+ <section class="we">
+    <div class="box1">
+        <main class="dot">Testing and Quality Assurance (QA)</main>
+        <br>
+        <main class="bot">
+            Testing and QA involve systematically checking websites and applications for defects, errors, and usability issues. Testers verify that the product meets requirements, works as intended, and provides a good user experience. They identify and report bugs, providing detailed descriptions and reproduction steps. This helps developers fix issues, ensuring the final product is stable, reliable, and meets quality standards. Effective testing saves time, reduces costs, and improves overall product quality, making it a crucial step in the web development process.
+
+        </main>
+    </div>
+    <div class="box2">
+        <main class="dot">Content Creation</main>
+        <br>
+        <main class="bot"> Content creation involves producing and editing content for websites, such as text, images, videos, and graphics. Content creators write engaging copy, design visuals, and optimize media to enhance user experience and convey messages effectively. They work with web developers to integrate content into the website's structure and design. Well-crafted content helps establish brand identity, communicates values, and resonates with target audiences. Content creators play a vital role in shaping the website's tone, style, and overall narrative, making it an essential aspect of web development.
+
+
+        </main>
+    </div>
+    <div class="box3">
+        <main class="dot">Project Management:</main>
+        <br>
+        <main class="bot">
+            Project management involves overseeing web development projects from start to finish. Project managers coordinate tasks, set deadlines, and allocate resources to ensure projects are completed on time, within budget, and to the desired quality. They communicate with clients, team members, and stakeholders, ensuring everyone is informed and aligned. Effective project management identifies and mitigates risks, resolves conflicts, and makes informed decisions. By streamlining processes and minimizing delays, project managers help web developers stay focused on coding, ensuring successful project outcomes and happy clients.
+        </main>
+    </div>
+ </section>
+ <article id="us"  class="profile">ABOUT ADMIN
 </article>
-<br>
-<marquee direction="right" behavior="alternate">Send proof of payment to <a href="https://wa.me/qr/QLXDAUPJ2RXMB1">08153472450</a></marquee>
-</form>
+    <main class="gradient">
+       <a href="terms and condition.html"><main class="grad"></main></a> 
+    </main>
+    <main class="gradient1">
+        <a href="terms and condition.html"><main class="grad1"></main></a>
+    </main>
+    <main class="pro">
+        <img class="myself" src="images/-1055927288.png.jpg" alt="">
+        <main class="media">
+            <main class="social">
+                <a href="https://www.facebook.com/profile.php?id=100087150733671"><img class="socks" src="images/download.jfif" alt=""></a>
+                <a href="https://www.tiktok.com/@goodydyles43?_r=1&_d=ea02b04elfa0hi&sec_uid=MS4wLjABAAAAIE6qXZe9j3udf-y1Fa9SIl4KBJzq0BFHwrFNvr5Eefx-T7zYvMHVg0L3q4aWTLdi&share_author_id=7084690472707113990&sharer_language=en&source=h5_m&u_code=e16d676gcd1jgm&timestamp=1724415382&user_id=7084690472707113990&sec_user_id=MS4wLjABAAAAIE6qXZe9j3udf-y1Fa9SIl4KBJzq0BFHwrFNvr5Eefx-T7zYvMHVg0L3q4aWTLdi&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7401032647592249093&share_link_id=7f5456a3-eaf2-4632-a699-224d09ee98cf&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"><img class="socks" src="images/download (1).jfif" alt=""></a>
+                <a href="https://www.instagram.com/goody_dyles43?utm_source=qr&igsh=anZ5dGwycjZ6OXY="><img class="socks" src="images/download (2).jfif" alt=""></a>
+                <a href="https://wa.me/qr/QLXDAUPJ2RXMB1"><img class="socks" src="images/images.jfif" alt=""></a>
+            </main>
+            <nav class="nav">
+                GOODLUCK
+            </nav>
+            <footer class="web">WEB PROGRAMMER</footer>
+        </main>
+    </main>
+    <footer class="margin">
+        <p class="note">NOTE</p>
+        Our online aid provides expert assistance to web developers, ensuring efficient and effective solutions. To utilize our services, please note that we take our terms and conditions seriously. By proceeding, you acknowledge that you have read, understood, and agreed to our terms. Visit our <a class="con" href="terms and condition.html">Terms and Conditions </a>page or press the <p class="review">button beside the about admin </p> to review them now. We cannot provide aid without your explicit agreement to our terms.
+    </footer>
 </body>
 </html>
